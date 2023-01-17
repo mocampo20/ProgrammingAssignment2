@@ -1,8 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This program will try to cache a Loop which has not been changed recently, this avoiding rerun again the matrix and avoiding spend time running again. 
+## If detects this matrix has been running already will bring the information.
+## If not, then will run bring the value.
 
-## Write a short comment describing this function
 
+## Create a function called makeCacheMatrix which will recieve x=matrix() and use function(inverse). Here we are setting/getting the matrix 
 makeCacheMatrix <- function(x = matrix()) {
 	m <- NULL
 	set <- funtion(y){
@@ -18,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Create a function called cacheSolve, which will try to ientify if this matrix has been already run or it is totally different.
 
 cacheSolve <- function(x, ...) {
 	m <- x$getInverse()
